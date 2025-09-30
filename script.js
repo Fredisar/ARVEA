@@ -102,7 +102,7 @@
                 price: 7500,
                 category: "maquillage",
                 description: "Sublime le regard et les cils en un simple geste. Résultat: des cils plus volumineux, plus longs et parfaitement définis.",
-                image: "images/products/mascara.jpg"
+                image: "image/45.jpg"
             },
             {
                 id: 14,
