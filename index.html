@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARVEA - Cosmétiques Naturels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">ARV<span>EA</span></a>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#categories">Catégories</a></li>
+                    <li><a href="#produits">Produits</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-icons">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="user-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="container hero-content">
+            <h1>TOUT CE QU'ON A DE PLUS PRÉCIEUX... POUR VOUS!</h1>
+            <p>Découvrez notre gamme de cosmétiques naturels pour une beauté authentique et respectueuse de votre peau.</p>
+            <a href="#produits" class="btn">Découvrir nos produits</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Nos Catégories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/categories/cosmetiques-naturelles.jpg" alt="Cosmétiques Naturelles">
+                    </div>
+                    <div class="category-content">
+                        <h3>Cosmétiques Naturelles</h3>
+                        <p>Des produits essentiels pour votre beauté au quotidien</p>
+                        <a href="#" class="btn">Explorer</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/categories/maquillage.jpg" alt="Maquillage">
+                    </div>
+                    <div class="category-content">
+                        <h3>Maquillage</h3>
+                        <p>Sublimez votre beauté avec nos produits naturels</p>
+                        <a href="#" class="btn">Explorer</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/categories/parfums.jpg" alt="Parfums">
+                    </div>
+                    <div class="category-content">
+                        <h3>Parfums</h3>
+                        <p>L'essence du caractère pour homme et femme</p>
+                        <a href="#" class="btn">Explorer</a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/categories/complements-alimentaires.jpg" alt="Compléments Alimentaires">
+                    </div>
+                    <div class="category-content">
+                        <h3>Compléments Alimentaires</h3>
+                        <p>Pour votre bien-être intérieur et extérieur</p>
+                        <a href="#" class="btn">Explorer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="produits">
+        <div class="container">
+            <h2 class="section-title">Nos Produits</h2>
+            
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="cosmetiques">Cosmétiques</button>
+                <button class="filter-btn" data-filter="maquillage">Maquillage</button>
+                <button class="filter-btn" data-filter="parfums">Parfums</button>
+                <button class="filter-btn" data-filter="complements">Compléments</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Les produits seront générés dynamiquement par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="apropos">
+        <div class="container">
+            <h2 class="section-title">À Propos d'ARVEA</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Notre Philosophie</h2>
+                    <p>ARVEA incarne l'excellence dans le domaine des cosmétiques naturels. Notre mission est de vous offrir des produits de qualité supérieure, formulés avec des ingrédients naturels soigneusement sélectionnés pour prendre soin de votre peau, de vos cheveux et de votre bien-être général.</p>
+                    <p>Depuis notre création, nous nous engageons à développer des produits qui allient efficacité, naturalité et respect de l'environnement. Chaque produit ARVEA est le fruit de recherches approfondies et d'un savoir-faire unique.</p>
+                    <a href="#" class="btn">En savoir plus</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="À propos d'ARVEA">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ARVEA</h3>
+                    <p>Votre partenaire beauté et bien-être naturel. Des produits de qualité pour une beauté authentique.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#categories">Catégories</a></li>
+                        <li><a href="#produits">Produits</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Catégories</h3>
+                    <ul>
+                        <li><a href="#">Cosmétiques Naturelles</a></li>
+                        <li><a href="#">Maquillage</a></li>
+                        <li><a href="#">Parfums</a></li>
+                        <li><a href="#">Compléments Alimentaires</a></li>
+                        <li><a href="#">Accessoires</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Rue de la Beauté, Paris</li>
+                        <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
+                        <li><i class="fas fa-envelope"></i> contact@arvea.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 ARVEA. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Votre Panier</h2>
+            <button class="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items">
+            <!-- Les articles du panier seront ajoutés ici dynamiquement -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price">0 CFA</span>
+            </div>
+            <button class="btn checkout-btn">Passer à la caisse</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal">
+        <div class="checkout-header">
+            <h2>Finaliser votre commande</h2>
+            <button class="close-checkout">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <form class="checkout-form">
+            <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Adresse</label>
+                <input type="text" id="address" required>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="city">Ville</label>
+                    <input type="text" id="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="postal">Code postal</label>
+                    <input type="text" id="postal" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Méthode de paiement</label>
+                <div class="payment-methods">
+                    <div class="payment-method active" data-method="card">
+                        <div class="payment-icon">
+                            <i class="far fa-credit-card"></i>
+                        </div>
+                        <span>Carte</span>
+                    </div>
+                    <div class="payment-method" data-method="paypal">
+                        <div class="payment-icon">
+                            <i class="fab fa-paypal"></i>
+                        </div>
+                        <span>PayPal</span>
+                    </div>
+                    <div class="payment-method" data-method="mobile">
+                        <div class="payment-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <span>Mobile</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="card-number">Numéro de carte</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="expiry">Date d'expiration</label>
+                    <input type="text" id="expiry" placeholder="MM/AA" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="123" required>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn">Payer maintenant</button>
+        </form>
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
