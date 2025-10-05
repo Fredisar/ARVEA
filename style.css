@@ -763,3 +763,117 @@
                 max-width: 100%;
             }
         }
+
+        /* Styles pour le panier vide */
+.empty-cart {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--light-text);
+}
+
+.empty-cart p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Amélioration des boutons de suppression */
+.remove-item {
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    transition: var(--transition);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.remove-item:hover {
+    background-color: rgba(255, 107, 107, 0.1);
+    transform: scale(1.1);
+}
+
+/* Styles pour les notifications */
+.notification {
+    animation: slideIn 0.3s ease;
+}
+
+.notification.error {
+    background-color: #ff6b6b !important;
+}
+
+.close-notification {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Amélioration des items du panier */
+.cart-item {
+    position: relative;
+    transition: var(--transition);
+}
+
+.cart-item:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Bouton de suppression avec effet */
+.remove-item {
+    position: relative;
+}
+
+.remove-item::after {
+    content: 'Supprimer';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.remove-item:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-clear {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.btn-clear:hover {
+    background-color: #ff5252;
+}
